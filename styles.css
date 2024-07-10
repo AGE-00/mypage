@@ -43,3 +43,22 @@ footer {
     bottom: 0;
     width: 100%;
 }
+/* メディアクエリを追加 */
+@media (max-width: 600px) {
+    header {
+        padding: 10px;
+    }
+
+    main {
+        padding: 10px;
+    }
+
+    footer {
+        padding: 5px;
+        font-size: 12px;
+    }
+
+    section {
+        margin-bottom: 10px;
+    }
+}
