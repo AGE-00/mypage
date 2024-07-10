@@ -90,5 +90,13 @@ footer {
         font-size: 14px;
     }
 }
+/* Hover effect */
+button {
+    transition: transform 0.3s ease;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
 
 
