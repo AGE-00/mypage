@@ -5,18 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>あげあげ</title>
         <link rel="stylesheet" href="./styles.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+
 </head>
 <body>
+    <div id="particles-js"></div>
     <header>
-        <h1>ブログ</h1>
+        <h1 data-aos="fade-down">ブログ</h1>
     </header>
     <main>
-        <section id="about">
+        <section id="about"  data-aos="fade-up">
             <h2>自己紹介</h2>
             <p>あげです。FPSやってます。</p>
             <p>twitter廃人でもありますねぇ!</p>
         </section>
-        <section id="contact">
+        <section id="contact" data-aos="fade-up">
             <h2>連絡先</h2>
             <p>twitterアカウントはこちら:<a href="https://twitter.com/ysfh_newb" target="_blank">@ysfh_newb</a></p>
         </section>
@@ -32,6 +35,15 @@
         <p>&copy; 2024 ブログ</p>
         <p>All rights reserved.</p>
     </footer>
-    <script></script>
+    <!-- particles.js lib - https://github.com/VincentGarreau/particles.js -->
+    <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <!-- stats.js lib -->
+    <script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
+    <!-- AOS.js lib -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="script.js"></script>
         </body>
 </html>
