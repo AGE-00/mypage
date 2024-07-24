@@ -50,6 +50,7 @@ section h2 {
 a {
   color: #007bff;
   text-decoration: none;
+  text-underline-offset: 10px;
 }
 
 a:hover {
