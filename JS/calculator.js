@@ -46,8 +46,8 @@ document.addEventListener('DOMContentLoaded', () => {
         switch (op) {
             case '+': return (a + b).toString();
             case '-': return (a - b).toString();
-            case '*': return (a * b).toString();
-            case '/': return (a / b).toString();
+            case '×': return (a * b).toString();
+            case '÷': return (a / b).toString();
         }
     }
 });
