@@ -4,73 +4,109 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>あげあげ</title>
+    <!-- Tailwind CSS CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="CSS/styles.css" />
+    <!-- AOS CDN (もし使用している場合) -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
 
-  <body>
+  <body class="bg-gray-100 font-sans">
     <div id="particles-js"></div>
-    <header>
-      <h1 data-aos="fade-down">ブログ</h1>
-      <nav>
-        <ul>
-          <li><a href="#top">トップ</a></li>
-          <li><a href="calculator.html">計算機</a></li>
+    <header class="bg-blue-500 text-white text-center py-4">
+      <h1 data-aos="fade-down" class="text-4xl">ブログ</h1>
+      <nav class="mt-2">
+        <ul class="flex justify-center space-x-4">
+          <li>
+            <a href="#top" class="hover:text-blue-200 transition duration-300"
+              >トップ</a
+            >
+          </li>
+          <li>
+            <a
+              href="calculator.html"
+              class="hover:text-blue-200 transition duration-300"
+              >計算機</a
+            >
+          </li>
         </ul>
       </nav>
     </header>
-    <main>
-      <section id="about" data-aos="fade-up">
-        <h2>自己紹介</h2>
+    <main class="container mx-auto p-4">
+      <section id="about" data-aos="fade-up" class="bg-white rounded-lg shadow-md p-6 mb-6">
+        <h2 class="text-2xl text-blue-500 border-b border-blue-500 pb-2 mb-4">
+          自己紹介
+        </h2>
         <p>あげです。FPSやってます。</p>
         <p>元気に生きてます。</p>
       </section>
-      <section id="contact" data-aos="fade-up">
-        <h2>連絡先</h2>
+      <section
+        id="contact"
+        data-aos="fade-up"
+        class="bg-white rounded-lg shadow-md p-6 mb-6"
+      >
+        <h2 class="text-2xl text-blue-500 border-b border-blue-500 pb-2 mb-4">
+          連絡先
+        </h2>
         <p>
-          twitterアカウントはこちら:<a
+          twitterアカウントはこちら:
+          <a
             rel="noopener"
             href="https://twitter.com/ysfh_newb"
             target="_blank"
+            class="text-blue-500 hover:underline"
             >@ysfh_newb</a
           >
         </p>
       </section>
-      <section id="hobby" data-aos="fade-up">
-        <h2>趣味</h2>
+      <section id="hobby" data-aos="fade-up" class="bg-white rounded-lg shadow-md p-6 mb-6">
+        <h2 class="text-2xl text-blue-500 border-b border-blue-500 pb-2 mb-4">
+          趣味
+        </h2>
         <p>・FPSゲーム</p>
         <p>
-          valorantとかapexやってます。valorantトラッカーは<a
+          valorantとかapexやってます。valorantトラッカーは
+          <a
             rel="noopener"
             href="https://tracker.gg/valorant/profile/riot/age%23ggwp/overview"
             target="_blank"
+            class="text-blue-500 hover:underline"
             >こちら</a
           >
         </p>
         <p>・Twitter</p>
         <p>
-          垢を2023年に開設してから14Kツイートほどツイートしました。twitter生活は最高ですね！
+          最近はあまり動かしていませんがたまにつぶやいています。
         </p>
       </section>
-      <section id="something" data-aos="fade-up">
-        <h2>お気持ち</h2>
+      <section
+        id="something"
+        data-aos="fade-up"
+        class="bg-white rounded-lg shadow-md p-6 mb-6"
+      >
+        <h2 class="text-2xl text-blue-500 border-b border-blue-500 pb-2 mb-4">
+          お気持ち
+        </h2>
         <p>
-          "研修"旅行に沖縄まで行きます！
+          共通テストまであと300日を切りました。焦り焦り
         </p>
-        <p>OISTで英語発表をしなくてはいけないの複雑な気持ちです</p>
-        <p>沖縄が終わったら受験勉強頑張りますよ～</p>
+        <p>新しいクラスが楽しみ</p>
+        <p>毎日努力して志望校合格！</p>
       </section>
     </main>
-    <footer>
+    <footer class="bg-blue-500 text-white text-center py-4">
       <p>&copy; 2024 ブログ</p>
       <p>All rights reserved.</p>
     </footer>
     <script src="JS/script.js"></script>
-    <!-- Cloudflare Web Analytics -->
-    <script
-      defer
-      src="https://static.cloudflareinsights.com/beacon.min.js"
-      data-cf-beacon='{"token": "45b6fa90fb7a491fb7350734417a3aaf"}'
-    ></script>
-    <!-- End Cloudflare Web Analytics -->
+    <!-- AOS Script (もし使用している場合) -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
   </body>
 </html>
